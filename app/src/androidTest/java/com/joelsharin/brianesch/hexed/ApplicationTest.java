@@ -10,5 +10,6 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
     public ApplicationTest() {
         // This is a comment that Joel made
         super(Application.class);
+        // This is a comment that Brian made
     }
 }
