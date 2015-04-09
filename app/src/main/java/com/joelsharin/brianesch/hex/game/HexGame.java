@@ -102,5 +102,19 @@ public class HexGame {
         }
     }
 
+    /**
+     * Undoes the last move
+     * @return true if undo completed successfully, false otherwise
+     */
+    public boolean undo() {
+        //TODO: Implement this
+        return false;
+    }
 
+    /**
+     * Resets the game to the state of about to begin
+     */
+    public void restartGame() {
+        //TODO: Implement this
+    }
 }
