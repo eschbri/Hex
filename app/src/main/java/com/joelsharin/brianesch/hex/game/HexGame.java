@@ -13,6 +13,10 @@ public class HexGame {
 
     private List<List<GameSquare>> board;
 
+    /**
+     *
+     * @param size
+     */
     public HexGame(int size) {
         this.size = size;
         turn = true;
