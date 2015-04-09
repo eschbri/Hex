@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Hexed</string>
+    <string name="title_activity_main">Hexed</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 </resources>
