@@ -1,4 +1,4 @@
-package com.joelsharin.brianesch.hexed;
+package com.joelsharin.brianesch.hex;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
