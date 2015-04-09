@@ -1,4 +1,4 @@
-package com.joelsharin.brianesch.hexed;
+package com.joelsharin.brianesch.hex;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
