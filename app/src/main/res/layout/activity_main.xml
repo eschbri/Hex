@@ -17,8 +17,7 @@
         android:id="@+id/button2"
         android:layout_marginTop="43dp"
         android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:onClick="gameListView"/>
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"

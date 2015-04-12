@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -13,8 +14,19 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button butGuest = (Button)findViewById(R.id.button2);
+        butGuest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gameListViewIntent = new Intent(getApplicationContext(), GameList.class);
+                startActivity(gameListViewIntent);
+            }
+        });
+
     }
 
 
@@ -40,9 +52,4 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /** Called when the user presses the 'Play as Guest' on main menu**/
-    public void gameListView(View view){
-        Intent gameListViewIntent = new Intent(this, GameList.class);
-        startActivity(gameListViewIntent);
-    }
 }
