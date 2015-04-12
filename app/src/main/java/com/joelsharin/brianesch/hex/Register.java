@@ -1,7 +1,5 @@
 package com.joelsharin.brianesch.hex;
 
-
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,38 +8,27 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class LoginMenu extends ActionBarActivity {
+public class Register extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_menu);
+        setContentView(R.layout.activity_register);
 
-        Button butGuest = (Button)findViewById(R.id.button2);
-        butGuest.setOnClickListener(new View.OnClickListener() {
+        Button registerBut = (Button)findViewById(R.id.button4);
+        registerBut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                 finish();
+                finish();
             }
         });
-
-        Button butSignIn = (Button)findViewById(R.id.button4);
-        butSignIn.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                 Intent registerIntent = new Intent(getApplicationContext(), Register.class);
-                 startActivity(registerIntent);
-                 finish();
-            }
-        });
-
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_game_list, menu);
+        getMenuInflater().inflate(R.menu.menu_register, menu);
         return true;
     }
 
