@@ -17,16 +17,18 @@ public class LoginMenu extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_menu);
 
+        //Guest Button Procedure
         Button butGuest = (Button)findViewById(R.id.button2);
         butGuest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                 finish();
+                finish();
             }
         });
 
-        Button butSignIn = (Button)findViewById(R.id.button4);
-        butSignIn.setOnClickListener(new View.OnClickListener(){
+        //Sign up Button Procedure
+        Button butSignUp = (Button)findViewById(R.id.button4);
+        butSignUp.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                  Intent registerIntent = new Intent(getApplicationContext(), Register.class);
