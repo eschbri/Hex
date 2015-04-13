@@ -1,7 +1,9 @@
 package com.joelsharin.brianesch.hex;
 
 
+
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -17,7 +19,11 @@ public class LoginMenu extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_menu);
 
-        //Guest Button Procedure
+        //Hide action bar
+        ActionBar actionbar = getSupportActionBar();
+        actionbar.hide();
+
+        // Guest Button Procedure
         Button butGuest = (Button)findViewById(R.id.button2);
         butGuest.setOnClickListener(new View.OnClickListener() {
             @Override
